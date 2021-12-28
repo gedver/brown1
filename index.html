@@ -127,7 +127,6 @@
           merge: (event) => {
             document.querySelectorAll('tr.record').forEach(element => {
                 element.querySelector('.description').innerHTML = element.querySelector('.date').textContent + ' : ' + element.querySelector('.description').textContent
-                console.log(element.querySelector('.description'))
             })
           },
           replace: () => {
@@ -165,8 +164,6 @@
             var table = document.querySelector('table#records > tbody')
 
             table.removeChild(table.lastElementChild)
-
-            console.log('hf')
 
           },
           numerate: (event) => {
